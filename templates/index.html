@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply for SWE</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">  <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="top-bar">  <!-- Top bar with a message -->
+        <h1>Apply for SWE</h1>
+    </div>
+    <div class="container">
+        <h2>Software Engineer Application</h2>
+        <form action="/" method="post" enctype="multipart/form-data">  <!-- Form for user details -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" (name="email") required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <h3>Upload your resume <span style="color: red; display: inline;"><h6 style="display: inline;">(*docx or pdf only)</h6></span></h3>  <!-- Heading for the file upload section -->
+            <!-- <small style="color: red; display: block;">(TXT or PDF)</small>  -->
+            <input type="file" name="file" required>
+            
+            
+            <br>  <!-- Add line breaks to separate the button from the file instruction -->
+
+            <button type="submit">Submit Application</button>  <!-- Submit button placed further down -->
+        </form>
+    </div>
+</body>
+</html>
